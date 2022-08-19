@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="UTF-8">
+        <title></title>
+        <script src="js/vue.js"></script>
+    </header>
+    <body>
+       <div id="app">
+        <button @click="showInfo">单击</button>
+        <p>{{msg}}</p> 
+       </div>
+       <script>
+        var vm=new Vue({
+            el:'#app',
+            data:{
+                msg: ''
+            },
+            methods: {
+               showInfo(){
+                this.msg='被单击了'
+               }
+            }
+        })
+       </script>
+    </body>
+</html>
